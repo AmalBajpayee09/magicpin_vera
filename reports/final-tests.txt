@@ -1,0 +1,59 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 test
+> node --import tsx --test tests/*.test.ts
+
+✔ 200 deterministic unseen identities preserve metrics, sender, template and one CTA (40.255817ms)
+✔ unknown evidence paths work without memorized trigger names (1.231645ms)
+✔ 100 placeholder records and opaque payloads never create unsupported facts (0.871711ms)
+✔ injected markup and very long facts are stripped or suppressed without cutting a CTA (1.130224ms)
+✔ all consent revocation, future opt-in and channel restrictions are enforced (0.327826ms)
+✔ malformed optional fields cannot crash a later tick (0.839353ms)
+✔ fresh category version is used by HTTP composition and stale versions cannot overwrite it (64.011479ms)
+✔ new event becomes eligible after suppression expires, same event never replays (16.270653ms)
+✔ new context with expired offers is respected when the merchant accepts (8.179157ms)
+{"measurement":"20 health requests at ~10 rps","max_ms":16.274529999999913,"mean_ms":2.511542300000002}
+✔ 10 requests per second for two seconds stays within deadline (2074.572808ms)
+✔ health and metadata use exact mandatory field types and initially empty state (46.625848ms)
+✔ context equality no-op, higher version replacement, lower HTTP 409 (30.596227ms)
+✔ bad scope/types/IDs/dates/malformed JSON and oversized data return structured errors (28.211313ms)
+✔ tick respects expiry, unknown IDs, dedup and new conversation requirement (22.614692ms)
+✔ highest supported priority wins for same recipient regardless of input order (4.491884ms)
+✔ 20 action cap does not mark the unsent tail as suppressed (12.044292ms)
+✔ same category suppression key does not suppress another merchant (3.531752ms)
+✔ concurrent ticks emit an event once (14.055382ms)
+✔ consent, scope and relationship mismatch suppress customer action (6.60869ms)
+✔ reply delivers actual plan, advances approval, and replays idempotently (8.877782ms)
+✔ reply ownership and unknown conversations are rejected (5.757779ms)
+✔ opt-out prevents later events while refusal closes only this proposal (4.682907ms)
+✔ auto-reply loop waits then ends; hostile and off-topic replies stay on mission (8.482236ms)
+✔ no, yes but later and negative commitment do not dispatch a pitch (13.019017ms)
+✔ customer booking response never claims a reservation (3.932126ms)
+✔ durable snapshot preserves contexts, conversations, suppression and reply replay (7.716983ms)
+{"event":"request_failed","path":"/v1/context","reason":"internal_error"}
+✔ failed persistence rolls back request state and returns JSON error (2.9972ms)
+✔ admin data and reset endpoints are disabled by default (3.975519ms)
+✔ changed intent retires the old draft and no subsequent reply repeats the old pitch (6.00794ms)
+✔ confusion asks for clarification, and expired proposal is not executed (4.298979ms)
+✔ optional local dashboard demo creates a real conversation for replies (4.766932ms)
+✔ same input produces exactly identical action including template fields (16.08568ms)
+✔ placeholder and unknown trigger are genuine no-action (0.620719ms)
+✔ fresh digest is selected by exact reference, never unrelated fallback (0.682621ms)
+✔ current performance wins over stale trigger and above-peer CTR changes proposed action (0.612958ms)
+✔ active offers honor status, dates and Indian weekday restrictions (0.936978ms)
+✔ consent is purpose specific and merchant relationships must match (0.509365ms)
+✔ lifecycle state changes winback eligibility and wording (0.515103ms)
+✔ pharmacy recall preserves batch IDs and does not invent treatment (0.352152ms)
+✔ customer refill avoids medication detail disclosure and requires pharmacy category (0.434934ms)
+✔ far future festival and past event do not create urgency (0.425119ms)
+✔ offer catalog is not merchant activation (0.286244ms)
+✔ output validation rejects altered numeric claims and multiple CTAs (0.240776ms)
+✔ recall does not send months before due or before the recorded last service (0.415586ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 44
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2511.966832

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "base_url": "http://127.0.0.1:46011",
+  "https": false,
+  "requests": 9,
+  "mean_ms": 2.277,
+  "max_ms": 7.665,
+  "synthetic_context_id": "smoke-b4c528b94853",
+  "conversation_id": "conv_5881b5b41def1eb2ff894403",
+  "production_restart": "PASS",
+  "persisted_counts": {
+    "category": 6,
+    "merchant": 6,
+    "customer": 0,
+    "trigger": 1
+  },
+  "official_warmup": "PASS (unchanged official warmup method, no LLM scoring)"
+}

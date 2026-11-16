@@ -1,0 +1,8 @@
+
+[95m[1m======================================================================[0m
+[95m[1m                  magicpin AI Challenge — LLM Judge                   [0m
+[95m[1m======================================================================[0m
+
+[91m[FAIL][0m LLM_API_KEY is not set!
+[94m[INFO][0m Edit the CONFIGURATION section at the top of this file
+[94m[INFO][0m Set your API key for your chosen provider

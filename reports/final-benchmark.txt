@@ -1,0 +1,36 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 benchmark
+> node --import tsx scripts/run_benchmark.ts
+
+T01: SEND Suresh, Continuing your corporate bulk thali package plan. Proposed outline: menu, order minimum, delivery window and billing terms; pricing needs your approval. Shall I draft the announcement for review?
+T02: SEND Padma, Continuing your kids yoga summer camp plan. Proposed outline: age groups, session schedule and guardian consent; capacity and fees need your approval. Shall I draft the announcement for review?
+T03: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T04: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T05: SEND Ramesh, Supplied summer 2026 trends: ORS demand +40; sunscreen demand +38; antifungal demand +45; cold cough demand -60. Review stock readiness; this is not a medication recommendation. Would you like a readiness checklist?
+T06: SEND Dr. Meera, IDA Delhi chapter calendar: “IDA Delhi: Digital impressions — 2026 state of the art”. Shall I share a source-attributed summary for your review?
+T07: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T08: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T09: SEND Dr. Meera, The supplied update lists Smile Studio at 1.3 km. We can clarify what makes your service distinctive without copying their prices. Shall I draft a differentiation post?
+T10: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T11: SEND Lakshmi, Your latest 30-day snapshot shows 62 calls. Which service is getting the most enquiries this week?
+T12: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T13: SEND Hi Rashmi, PowerHouse Fitness here. 57 days since your last visit. An option if useful: 3 FREE Trial Classes. Would you like to discuss a comfortable way to return?
+T14: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T15: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T16: SEND Anjali, It has been 38 days since your last message to VERA. What would be most useful to work on next?
+T17: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T18: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T19: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T20: SEND Vikas, Your Google Business Profile is marked unverified. Verification should be completed before relying on listing visibility. Would you like a verification checklist?
+T21: SEND Suresh, DC vs MI is listed for 2026-04-26T19:30:00+05:30. We can outline an event-specific message after checking availability. Would you like a draft to review?
+T22: SEND Suresh, review count stands at 145; approaching the 150 milestone. Invite honest feedback from recent customers without incentives. Would you like a review-request draft?
+T23: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T24: SEND Dr. Bharat, calls down 50% in the current 7-day snapshot. CTR 1.8% versus category peer average 3%. We could review the listing and enquiry follow-up. Shall I draft a focused review plan?
+T25: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T26: SEND Padma, calls up 15% in the current 7-day snapshot. CTR 6.2% versus category peer average 4.5%. We could review how the active First Month @ ₹499 offer is presented. Shall I draft a focused review plan?
+T27: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T28: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T29: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T30: SEND Dr. Meera, Dental Council of India circular 2026-11-04: “DCI revised radiograph dose limits effective 2026-12-15”. Deadline supplied: 2026-12-15. Shall I turn this notice into a review checklist?
+Evaluated 30; send 14, suppress 16. Local invariants only; no official score.

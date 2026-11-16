@@ -1,0 +1,1 @@
+PASS: Python compose adapter invoked the same TypeScript decision path.

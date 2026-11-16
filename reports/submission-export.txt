@@ -1,0 +1,6 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 submission
+> node --import tsx scripts/generate_submission.ts
+
+Exported 30 offline composition records (14 messages, 16 abstentions with empty body). HTTP is the primary submission contract; confirm portal treatment of offline abstentions.

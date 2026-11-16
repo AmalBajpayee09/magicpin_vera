@@ -1,0 +1,54 @@
+{
+  "health": [
+    200,
+    {
+      "status": "ok",
+      "uptime_seconds": 0,
+      "contexts_loaded": {
+        "categories": 5,
+        "merchants": 50,
+        "triggers": 100,
+        "customers": 200
+      },
+      "version": "4.2.0"
+    }
+  ],
+  "metadata": [
+    200,
+    {
+      "team_name": "MgVpX",
+      "team_members": "BlackRockX",
+      "contact_email": "candidate@example.com",
+      "model": "deterministic realization engine",
+      "version": "4.2.0",
+      "framework": "Deterministic Signal Ranking & Verified Grounding Pipeline",
+      "endpoints": [
+        "/v1/context",
+        "/v1/tick",
+        "/v1/reply",
+        "/v1/healthz",
+        "/v1/metadata"
+      ]
+    }
+  ],
+  "context": [
+    200,
+    {
+      "accepted": true,
+      "ack_id": "ack_merchant_audit_2",
+      "scope": "merchant",
+      "context_id": "audit",
+      "version": 2
+    }
+  ],
+  "stale": [
+    200,
+    {
+      "accepted": true,
+      "ack_id": "ack_merchant_audit_1",
+      "scope": "merchant",
+      "context_id": "audit",
+      "version": 1
+    }
+  ]
+}

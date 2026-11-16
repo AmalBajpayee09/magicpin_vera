@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "clean_source_directory": "new extraction of candidate archive",
+  "dependency_install": "npm ci --ignore-scripts (subsequently full npm ci checked on final archive)",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "tests": {
+    "passed": 44,
+    "failed": 0,
+    "skipped": 0
+  },
+  "canonical": {
+    "pairs": 30,
+    "send": 14,
+    "suppress": 16,
+    "official_score": null
+  },
+  "production_runtime": "PASS",
+  "production_restart": "PASS",
+  "official_warmup": "PASS",
+  "original_files_unchanged": 16,
+  "executable_input_files_matched_to_verified_extraction": 420,
+  "source_hash_manifest": "reports/verified-source-sha256.json",
+  "public_deployment": "NOT PERFORMED",
+  "docker_execution": "NOT AVAILABLE",
+  "windows_native_execution": "NOT AVAILABLE"
+}

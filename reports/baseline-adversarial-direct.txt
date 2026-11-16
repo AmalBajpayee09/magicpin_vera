@@ -1,0 +1,76 @@
+============================================================
+         VERA BOT — COMPREHENSIVE ADVERSARIAL SUITE
+============================================================
+
+--- SUITE 1: 20 UNSEEN TRIGGER TESTS ---
+  ✅ PASS: Unseen 1: Sudden Monsoon Downpour in Mumbai
+  ✅ PASS: Unseen 2: Power Outage affecting nearby gym area
+  ✅ PASS: Unseen 3: Weekend Kids Cooking Workshop Inquiry
+  ✅ PASS: Unseen 4: Tech Park Midnight Shift Snack Box Demand
+  ✅ PASS: Unseen 5: Dengue Seasonal Spike in Delhi
+  ✅ PASS: Unseen 6: Dental Floss Awareness Week
+  ✅ PASS: Unseen 7: Post-Marathon Recovery Yoga Batch
+  ✅ PASS: Unseen 8: Bridal Party Hair Styling Bulk Request
+  ✅ PASS: Unseen 9: Heatwave 44°C Pune Alert
+  ✅ PASS: Unseen 10: Organic Buffalo Milk 18h Expiry Surplus
+  ✅ PASS: Unseen 11: Zomato Delivery Radius Extended to Koramangala 8th Block
+  ✅ PASS: Unseen 12: Competitor Salon 30% Keratin Blitz
+  ✅ PASS: Unseen 13: Saturday Afternoon 5 Dr. Meera Slot Cancellations
+  ✅ PASS: Unseen 14: Clear Aligner Search Volume Doubled
+  ✅ PASS: Unseen 15: Elderly Glaucoma Eye Drops Refill Due
+  ✅ PASS: Unseen 16: Gym 100-Day Workout Streak Milestone for Vikram
+  ✅ PASS: Unseen 17: International Yoga Day Community Camp
+  ✅ PASS: Unseen 18: Monsoon Hair Frizz Clinic Package Planning
+  ✅ PASS: Unseen 19: Pharmacy First Aid Kits for Housing Society AGM
+  ✅ PASS: Unseen 20: 30-Day Customer Lapsed Winback for Sunita
+
+--- SUITE 2: 10 MISLEADING-KIND TESTS ---
+  ✅ PASS: Misleading 1: kind=appointment_tomorrow with search volume surge payload -> NEW_SERVICE_DEMAND_SURGE
+  ✅ PASS: Misleading 2: kind=competitor_opened with cancelled slots payload -> TIME_SENSITIVE_OPERATIONAL
+  ✅ PASS: Misleading 3: kind=customer_care with 43°C heatwave payload -> WEATHER_SEASONAL_SURGE
+  ✅ PASS: Misleading 4: kind=general_opportunity with fresh paneer 24h shelf-life payload -> INVENTORY_PERISHABLE_PUSH
+  ✅ PASS: Misleading 5: kind=appointment_reminder with Diwali marathon event payload -> LOCAL_EVENT_SURGE
+  ✅ PASS: Misleading 6: kind=weather_update with competitor opening payload -> COMPETITIVE_MOVEMENT
+  ✅ PASS: Misleading 7: kind=performance_dip with tech park reopening payload -> CUSTOMER_SEGMENT_OPPORTUNITY
+  ✅ PASS: Misleading 8: kind=loyalty_reminder with delivery radius expansion payload -> GEOGRAPHIC_RADIUS_EXPANSION
+  ✅ PASS: Misleading 9: kind=search_surge with open slots payload -> TIME_SENSITIVE_OPERATIONAL
+  ✅ PASS: Misleading 10: kind=marathon_event with competitor undercut payload -> COMPETITIVE_MOVEMENT
+
+--- SUITE 3: 10 ENTITY GROUNDING ATTACKS ---
+  ✅ PASS: Grounding Attack 1: Rejects "Whitefield or new branch"
+  ✅ PASS: Grounding Attack 2: Rejects "SonicPro"
+  ✅ PASS: Grounding Attack 3: Rejects "CryoFacial"
+  ✅ PASS: Grounding Attack 4: Rejects "Harvard"
+  ✅ PASS: Grounding Attack 5: Rejects "2027 ungrounded date"
+  ✅ PASS: Grounding Attack 6: Rejects "guaranteed taboo word"
+  ✅ PASS: Grounding Attack 7: Rejects "guaranteed taboo word"
+  ✅ PASS: Grounding Attack 8: Rejects "99.9% unverified stat"
+  ✅ PASS: Grounding Attack 9: Rejects "unsupported clinical claim: free Botox"
+  ✅ PASS: Grounding Attack 10: Rejects "4,999 ungrounded number"
+
+--- SUITE 4: 10 OPERATIONAL INFERENCE ATTACKS ---
+  ✅ PASS: Operational 1: Zero slots handled safely (not converted to positive slot count)
+  ✅ PASS: Operational 2: Negative temperature extracted cleanly without regex crash
+  ✅ PASS: Operational 3: Non-numeric metric string captured in facts
+  ✅ PASS: Operational 4: Merchant identity maintained despite conflicting customer name
+  ✅ PASS: Operational 5: Merchant unverified status accurately preserved in verified facts
+  ✅ PASS: Operational 6: Engine realizes valid action even when merchant has empty offers array
+  ✅ PASS: Operational 7: Special unicode characters handled without syntax failure
+  ✅ PASS: Operational 8: Excessively long payload string does not produce runaway body length
+  ✅ PASS: Operational 9: Injection string safely treated as literal text
+  ✅ PASS: Operational 10: XSS tags sanitized or suppressed in output body
+
+--- SUITE 5: MALFORMED / NESTED / ARRAY / NULL PAYLOADS ---
+  ✅ PASS: Payload Malformed: String payload handled without crash
+  ✅ PASS: Payload Malformed: Number payload handled without crash
+  ✅ PASS: Payload Malformed: Boolean payload handled without crash
+  ✅ PASS: Payload Nested: Deeply nested payload objects handled cleanly
+  ✅ PASS: Payload Array: Array payload handled without crash
+  ✅ PASS: Payload Null: null payload handled cleanly
+  ✅ PASS: Payload Empty: empty object payload handled cleanly
+
+--- SUITE 6: GEMINI FAILURE & DETERMINISTIC FALLBACK ---
+  ✅ PASS: Gemini Fallback: Produces non-empty message even if Gemini is unavailable
+  ✅ PASS: Gemini Fallback: Output is 100% grounded
+  ✅ PASS: Gemini Fallback: Output has valid CTA
+  ✅ PASS: Gemini Failure: Missing credentials returns deterministic fallback

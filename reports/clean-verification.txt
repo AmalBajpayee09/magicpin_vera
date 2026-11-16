@@ -1,0 +1,124 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 verify
+> npm run lint && npm run build && npm test && npm run benchmark
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 lint
+> tsc --noEmit
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 build
+> vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs
+
+vite v6.4.6 building for production...
+transforming...
+✓ 1673 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.85 kB │ gzip:  0.40 kB
+dist/assets/index-Bfis_D_g.css   25.62 kB │ gzip:  5.71 kB
+dist/assets/index-DNS3RNI8.js   279.95 kB │ gzip: 80.75 kB
+✓ built in 1.95s
+
+  dist/server.cjs       59.3kb
+  dist/server.cjs.map  100.4kb
+
+⚡ Done in 6ms
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 test
+> node --import tsx --test tests/*.test.ts
+
+✔ 200 deterministic unseen identities preserve metrics, sender, template and one CTA (38.177783ms)
+✔ unknown evidence paths work without memorized trigger names (1.137546ms)
+✔ 100 placeholder records and opaque payloads never create unsupported facts (0.703533ms)
+✔ injected markup and very long facts are stripped or suppressed without cutting a CTA (0.969897ms)
+✔ all consent revocation, future opt-in and channel restrictions are enforced (0.205815ms)
+✔ malformed optional fields cannot crash a later tick (0.760527ms)
+✔ fresh category version is used by HTTP composition and stale versions cannot overwrite it (63.292973ms)
+✔ new event becomes eligible after suppression expires, same event never replays (13.718549ms)
+✔ new context with expired offers is respected when the merchant accepts (10.726746ms)
+{"measurement":"20 health requests at ~10 rps","max_ms":7.875048999999763,"mean_ms":1.994077800000025}
+✔ 10 requests per second for two seconds stays within deadline (2048.036585ms)
+✔ health and metadata use exact mandatory field types and initially empty state (57.018031ms)
+✔ context equality no-op, higher version replacement, lower HTTP 409 (25.031622ms)
+✔ bad scope/types/IDs/dates/malformed JSON and oversized data return structured errors (27.584365ms)
+✔ tick respects expiry, unknown IDs, dedup and new conversation requirement (25.039334ms)
+✔ highest supported priority wins for same recipient regardless of input order (4.665974ms)
+✔ 20 action cap does not mark the unsent tail as suppressed (15.424456ms)
+✔ same category suppression key does not suppress another merchant (3.870605ms)
+✔ concurrent ticks emit an event once (14.364015ms)
+✔ consent, scope and relationship mismatch suppress customer action (6.205215ms)
+✔ reply delivers actual plan, advances approval, and replays idempotently (10.933902ms)
+✔ reply ownership and unknown conversations are rejected (6.3032ms)
+✔ opt-out prevents later events while refusal closes only this proposal (4.570082ms)
+✔ auto-reply loop waits then ends; hostile and off-topic replies stay on mission (10.593778ms)
+✔ no, yes but later and negative commitment do not dispatch a pitch (14.332488ms)
+✔ customer booking response never claims a reservation (4.907683ms)
+✔ durable snapshot preserves contexts, conversations, suppression and reply replay (7.86205ms)
+{"event":"request_failed","path":"/v1/context","reason":"internal_error"}
+✔ failed persistence rolls back request state and returns JSON error (3.557351ms)
+✔ admin data and reset endpoints are disabled by default (3.051572ms)
+✔ changed intent retires the old draft and no subsequent reply repeats the old pitch (6.438951ms)
+✔ confusion asks for clarification, and expired proposal is not executed (4.770288ms)
+✔ optional local dashboard demo creates a real conversation for replies (5.157032ms)
+✔ same input produces exactly identical action including template fields (16.279593ms)
+✔ placeholder and unknown trigger are genuine no-action (0.502455ms)
+✔ fresh digest is selected by exact reference, never unrelated fallback (0.536315ms)
+✔ current performance wins over stale trigger and above-peer CTR changes proposed action (0.504338ms)
+✔ active offers honor status, dates and Indian weekday restrictions (0.706877ms)
+✔ consent is purpose specific and merchant relationships must match (0.57345ms)
+✔ lifecycle state changes winback eligibility and wording (0.470137ms)
+✔ pharmacy recall preserves batch IDs and does not invent treatment (0.378221ms)
+✔ customer refill avoids medication detail disclosure and requires pharmacy category (0.412591ms)
+✔ far future festival and past event do not create urgency (0.395026ms)
+✔ offer catalog is not merchant activation (0.228118ms)
+✔ output validation rejects altered numeric claims and multiple CTAs (0.2427ms)
+✔ recall does not send months before due or before the recorded last service (0.740638ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 44
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2590.873324
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-message-engine@5.0.0 benchmark
+> node --import tsx scripts/run_benchmark.ts
+
+T01: SEND Suresh, Continuing your corporate bulk thali package plan. Proposed outline: menu, order minimum, delivery window and billing terms; pricing needs your approval. Shall I draft the announcement for review?
+T02: SEND Padma, Continuing your kids yoga summer camp plan. Proposed outline: age groups, session schedule and guardian consent; capacity and fees need your approval. Shall I draft the announcement for review?
+T03: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T04: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T05: SEND Ramesh, Supplied summer 2026 trends: ORS demand +40; sunscreen demand +38; antifungal demand +45; cold cough demand -60. Review stock readiness; this is not a medication recommendation. Would you like a readiness checklist?
+T06: SEND Dr. Meera, IDA Delhi chapter calendar: “IDA Delhi: Digital impressions — 2026 state of the art”. Shall I share a source-attributed summary for your review?
+T07: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T08: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T09: SEND Dr. Meera, The supplied update lists Smile Studio at 1.3 km. We can clarify what makes your service distinctive without copying their prices. Shall I draft a differentiation post?
+T10: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T11: SEND Lakshmi, Your latest 30-day snapshot shows 62 calls. Which service is getting the most enquiries this week?
+T12: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T13: SEND Hi Rashmi, PowerHouse Fitness here. 57 days since your last visit. An option if useful: 3 FREE Trial Classes. Would you like to discuss a comfortable way to return?
+T14: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T15: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T16: SEND Anjali, It has been 38 days since your last message to VERA. What would be most useful to work on next?
+T17: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T18: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T19: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T20: SEND Vikas, Your Google Business Profile is marked unverified. Verification should be completed before relying on listing visibility. Would you like a verification checklist?
+T21: SEND Suresh, DC vs MI is listed for 2026-04-26T19:30:00+05:30. We can outline an event-specific message after checking availability. Would you like a draft to review?
+T22: SEND Suresh, review count stands at 145; approaching the 150 milestone. Invite honest feedback from recent customers without incentives. Would you like a review-request draft?
+T23: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T24: SEND Dr. Bharat, calls down 50% in the current 7-day snapshot. CTR 1.8% versus category peer average 3%. We could review the listing and enquiry follow-up. Shall I draft a focused review plan?
+T25: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T26: SEND Padma, calls up 15% in the current 7-day snapshot. CTR 6.2% versus category peer average 4.5%. We could review how the active First Month @ ₹499 offer is presented. Shall I draft a focused review plan?
+T27: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T28: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T29: SUPPRESS Insufficient permitted actionable evidence at the explicit offline scenario time.
+T30: SEND Dr. Meera, Dental Council of India circular 2026-11-04: “DCI revised radiograph dose limits effective 2026-12-15”. Deadline supplied: 2026-12-15. Shall I turn this notice into a review checklist?
+Evaluated 30; send 14, suppress 16. Local invariants only; no official score.

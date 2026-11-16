@@ -1,0 +1,26 @@
+
+[95m[1m======================================================================[0m
+[95m[1m                          LLM JUDGE — WARMUP                          [0m
+[95m[1m======================================================================[0m
+
+[94m[INFO][0m Bot: http://127.0.0.1:53914
+[94m[INFO][0m LLM: not used (warmup only)
+[94m[INFO][0m Loaded: 5 categories, 10 merchants, 25 triggers
+
+[96m[1m--- WARMUP ---[0m
+
+[92m[PASS][0m healthz (66ms)
+[92m[PASS][0m metadata — Team: VERA Candidate, Model: deterministic evidence-plan composer (no external LLM)
+
+[96m[1m--- CONTEXT PUSH ---[0m
+
+  [PASS] category/dentists
+  [PASS] category/gyms
+  [PASS] category/pharmacies
+  [PASS] category/restaurants
+  [PASS] category/salons
+  [PASS] merchant/001
+  [PASS] merchant/002
+  [PASS] merchant/003
+  [PASS] merchant/004
+  [PASS] merchant/005

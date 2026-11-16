@@ -1,0 +1,5 @@
+Reading seeds from /workspace/scratch/171f65156101/project/challenge_pack/dataset
+Writing to /workspace/scratch/171f65156101/project/challenge_pack/expanded
+  Loaded 5 categories, 10 merchant seeds, 15 customer seeds, 25 trigger seeds
+  Expanded to 50 merchants, 200 customers, 100 triggers
+Done. Run: ls /workspace/scratch/171f65156101/project/challenge_pack/expanded

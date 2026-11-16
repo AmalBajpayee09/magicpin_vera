@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: vera-message-engine
+    runtime: node
+    plan: starter
+    numInstances: 1
+    buildCommand: npm ci --include=dev && npm run lint && npm run build
+    startCommand: npm start
+    healthCheckPath: /v1/healthz
+    autoDeployTrigger: off
+    disk:
+      name: vera-state
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 24.22.1
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: STATE_FILE
+        value: /var/data/state.json
+      - key: PRELOAD_DATASET
+        value: "false"
+      - key: ENABLE_DASHBOARD
+        value: "false"
+      - key: TEAM_NAME
+        sync: false
+      - key: TEAM_MEMBERS
+        sync: false
+      - key: CONTACT_EMAIL
+        sync: false
+      - key: SUBMITTED_AT
+        sync: false

@@ -1,0 +1,18 @@
+{
+  "challenge-brief.md": "2755d8248b7b4fa830a62c5b47822baa914609fc9031c1a04c022dc77faa11e4",
+  "challenge-testing-brief.md": "5b1ff83668c71193f5a8cbb98016fb366618053345724f6507c9a9d788000e0b",
+  "dataset/categories/dentists.json": "0c99d768896642e90ec8f2efbbd521dd311df65fc657713efb6961ea2200ff47",
+  "dataset/categories/gyms.json": "b0feccdb9f1a970d3fdcad1edd1d1adf425226b51e523e07de95e19a562c12b4",
+  "dataset/categories/pharmacies.json": "8d0bd575e41f5dbb3c6346e3af25016ba50495b210b0120d36a9f5798bb6cb2f",
+  "dataset/categories/restaurants.json": "875e3216046a36aafbdc5c9dcd0020132eb3f3e117122abef2e4981b09b4e563",
+  "dataset/categories/salons.json": "9be652bc194e8b5ba99fefd60ba24483c9053ad77d0e3b8cd77df2091a8f358c",
+  "dataset/customers_seed.json": "aafdc7723d6e82cf5eee3d5f136051efbc8c54408d278bc6e28d6157912ef12e",
+  "dataset/generate_dataset.py": "828c9e0ad16d1b2c673355d662ffdc1423f9f0f3bb045b5cc3e6b5b4e969883b",
+  "dataset/merchants_seed.json": "1af93506d5060e8a22f5a6261eff1efaae2f056c59d778132e0cc69f837c79af",
+  "dataset/triggers_seed.json": "ef8128ba29335d6ef97170855c231c8979a184d796e83e821472867878d2be85",
+  "engagement-design.md": "920d82122b4e7156abebbb1e1354005b33e2250852b93f739170d9d81a9c876d",
+  "engagement-research.md": "d0484e524bd8ef32dd69ada0be0c88ed13ba6c2d87dee3bc7322cbfe8b26c54b",
+  "examples/api-call-examples.md": "c8153dd0ee7183b82d77cda0e0d6551032b6878c0b9743ec8856abb367b70cb9",
+  "examples/case-studies.md": "f6ade28a85dd638457d2d95e64fd491879a66f2be7b747d637f74eddc8aef5de",
+  "judge_simulator.py": "1f315329f9d845b364e2daa919c3b2b7049f8a8e864315a822daefb0f772b868"
+}
